@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>MPHD</title>
+	<link rel = "icon" href = "images/Favicon.png"/>
+       
+        <style>
+            body{
+                
+                background-image: url(images/background.png);
+                background-repeat: no-repeat;
+                background-size: 900px 900px;;
+                background-position-x: center;
+                background-attachment: fixed;
+                margin-top: 0px;
+                
+               
+                font-family: "Agency FB";
+
+            }
+            
+            .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 185px;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+span{
+    position: absolute;
+    left: 260px;
+    color: white;
+    top: 60px;
+}
+
+.app-details{
+    position: absolute;
+    top: 50px;
+    left:  145px;
+}
+
+.web-details{
+    position: absolute;
+    top: 50px;
+    left:  440px;
+}
+.logo{
+    position: absolute;
+    top: 30px;
+    left: 280px;
+}
+.web-dev-details{
+    position: absolute;
+    top: 50px;
+    left: 735px;
+}
+
+.app-dev-tab{
+    position: absolute;
+    top: 450px;
+    left: 180px;
+}
+.show{
+    icon: url(images/app-dev-tab.png);
+}
+
+input[type=submit]{
+                text-align: center;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-left: 20px;
+                padding-right: 20px;
+                border:0;
+                font-size: 18px;
+                background-color:red;
+                color:white;
+                position: absolute;
+                bottom:  -100px;
+                left: 755px;
+               
+            }
+        </style>
+    </head>
+    <body>
+        <div class='app-details'>
+            
+            <img src="images/app-detail.png" class="minus" onclick="changing(this)" >
+           
+        </div>
+        
+        <div class='web-details'>
+           <img src="images/web-dev-detail.png" class="minus3" onclick="changing(this)">
+           
+        </div>
+         
+        <div class='web-dev-details'>
+           <img src="images/web-detail.png" alt="web dev">
+           
+        </div>
+        <div class='app-dev-tab'>
+            <img src="images/app-dev-tab.png" class="minus2" onclick="changing(this)">
+           
+        </div>
+        
+        <div id="mySidenav" class="sidenav">
+ <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html#">About</a>
+  <a href="services.html#">Services</a>
+  <a href="gallery.html#">Gallery</a>
+  <a href="contact.html#">Contact</a>
+</div>
+
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+<div class='logo'>
+           <img src="images/Logo.png" alt="Logo">
+           
+        </div>
+<div class="button">
+    <input type='submit' value='Get in touch'>
+</div>
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+
+function changing(){
+   var minus =  document.getElementsByClassName("minus")[0];
+   
+   var minus2 =  document.getElementsByClassName("minus2")[0];
+   var minus3 =  document.getElementsByClassName("minus3")[0];
+   if(minus.src === "http://localhost:8383/MPHD/images/app-detail.png"){
+       minus2.src ="http://localhost:8383/MPHD/images/app-dev-tab.png";
+   }
+   
+   if(minus3.src === "http://localhost:8383/MPHD/images/web-dev-detail.png"){
+       minus2.src ="http://localhost:8383/MPHD/images/Web-design-tab.png";
+       
+   }
+}
+
+</script>
+    </body>
+</html>

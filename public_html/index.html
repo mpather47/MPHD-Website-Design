@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+       <title>MPHD</title>
+	<link rel = "icon" href = "images/Favicon.png"/>
+       
+        
+        <style>
+            
+            body{
+                
+                background-image: url(images/background.png);
+                background-repeat: no-repeat;
+                background-size: 900px 700px;
+                background-position-x: center;
+                background-attachment: fixed;
+                margin-top: 0px;
+                margin-bottom: 0px;
+                font-family: "Agency FB";
+
+            }
+            
+            .Cartoon img{
+                position: fixed;
+                left:  150px;
+               
+            }
+            
+            .Details img{
+                position: fixed;
+                left: 270px;
+            }
+            
+            .Apps{
+                position: fixed;
+                left:  720px;
+                top: 320px;
+            }
+            
+            input[type=button]{
+                text-align: center;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-left: 20px;
+                padding-right: 20px;
+                border:0;
+                font-size: 18px;
+                background-color:red;
+                color:white;
+                position: fixed;
+                bottom:  160px;
+               
+            }
+            
+            input[type=submit]{
+                text-align: center;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-left: 20px;
+                padding-right: 20px;
+                border:0;
+                font-size: 18px;
+                background-color:blue;
+                color:white;
+                position: fixed;
+                bottom:  160px;
+                left: 853px;
+               
+            }
+            
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 185px;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+span{
+    position: fixed;
+    left: 250px;
+    color: white;
+    top: 80px;
+}
+
+        </style>
+       
+    </head>
+    <body>
+        <div class="Cartoon"><img src="images/Cartoon Me.png"></div>
+        <div class="Details"><img src="images/Details.png"></div>
+        <div class="Apps">
+            <img src="images/youtube.png" alt="youtube">
+            <img src="images/twitter.png" alt="twitter">
+            <img src="images/instagram.png" alt="instagram">
+            <img src="images/facebook.png" alt="facebook">
+            <input type='button' value='Contact me' >
+            <input type='submit' value='View CV'>
+        </div>
+        
+       <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html#">About</a>
+  <a href="services.html#">Services</a>
+  <a href="gallery.html#">Gallery</a>
+  <a href="contact.html#">Contact</a>
+</div>
+
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+
+
+
+
+</script>
+    </body>
+</html>
